@@ -1,0 +1,10 @@
+package com.formacion.springboot.app.productos.models.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="products")
+public class producto {
+
+}

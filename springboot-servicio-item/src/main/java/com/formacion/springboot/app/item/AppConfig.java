@@ -1,0 +1,20 @@
+package com.formacion.springboot.app.item;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class AppConfig {
+/*las clases configuracion nos permiten crear objetos componentes de spring beans
+ y los podemos registrar en el contenedor utilizando metodos y notaciòn @bean  */
+
+	@Bean("clienteRest")
+	public RestTemplate registrarRestTemplate(){
+		return new RestTemplate();
+		// el objeto que retorna se guarda en el contenedor bean
+	}
+
+	// restTemplate es un cliente http para trabajar con api/rest
+	//para acceder a recursos que estan  en otros mucroservicios
+}

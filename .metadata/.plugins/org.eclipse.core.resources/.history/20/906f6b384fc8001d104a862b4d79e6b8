@@ -1,0 +1,16 @@
+package com.formacion.springboot.app.productos.models.entity;
+
+import java.util.Date;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="products")
+public class producto {
+	private Long id;
+	private String nombre;
+	private Double precio;
+	private Date fecha;
+	
+}

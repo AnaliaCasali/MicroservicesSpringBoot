@@ -1,0 +1,5 @@
+package com.formacion.springboot.app.item.service;
+
+public class ItemServiceImpl {
+
+}
